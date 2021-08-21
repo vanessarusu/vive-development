@@ -1,0 +1,241 @@
+body:not(.fl-builder-edit) {
+  #mainNavigation {
+    #menu-primary-menu {
+      border-right: 20px solid white;
+      @media (max-width: 1200px) {
+        margin-top: 100px;
+      }
+    }
+
+    li {
+      border: none;
+      //add white background to all normal shaped links
+      &:not(:first-of-type) {
+        background: white;
+      }
+      @media (min-width: 1200px) {
+        &:first-of-type {
+          // add custom skewed background to first link
+          &:before {
+            background: white;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            transform: skew(-35deg);
+          }
+          // create additional white block to cover the right side of the first link
+          &:after {
+            background: white;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 0;
+            bottom: 0;
+            z-index: -10;
+          }
+        }
+
+        &.focus,
+        .focus,
+        &.current-menu-item {
+          & > a {
+            color: white;
+            &:before {
+              background: $brand-blue;
+            }
+          }
+        }
+
+        &.current-menu-parent .fl-has-submenu-container a {
+          color: white;
+          &:before {
+            background: $brand-blue;
+          }
+        }
+      }
+    }
+
+    a {
+      @media (min-width: 1200px) {
+        position: relative;
+        z-index: 10;
+        transition: all 0.15s ease-in-out;
+        padding: 80px 64px 80px;
+        border: none;
+        text-decoration: none;
+
+        @media (max-width: 1650px) {
+          padding: 80px 40px 80px;
+        }
+
+        @media (max-width: 1400px) {
+          padding: 50px 30px 50px;
+          font-size: 14px;
+        }
+
+        // create the skewed blue hover block
+        &:before {
+          transition: all 0.15s ease-in-out;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: -10;
+          transform: skew(-35deg);
+        }
+
+        &:hover {
+          color: white;
+          &:before {
+            background: $brand-blue;
+          }
+        }
+      }
+
+      @media (max-width: 1200px) {
+        padding: 3rem 2rem;
+        font-size: 14px;
+        letter-spacing: 2px;
+
+        &:hover {
+          color: $brand-blue;
+        }
+      }
+    }
+
+    .sub-menu {
+      min-width: 206px;
+      transform: translateX(-61px);
+
+      @media (max-width: 1400px) {
+        transform: translateX(-40px);
+      }
+
+      li {
+        &:before {
+          transform: skew(0);
+        }
+
+        a {
+          padding: 40px 18px;
+          display: block;
+          text-align: center;
+
+          &:before {
+            transform: skew(0);
+          }
+        }
+
+        &:nth-child(odd) {
+          a {
+            background: #e5e5e5;
+          }
+        }
+
+        &:last-child {
+          border-bottom: 4px solid $brand-blue;
+        }
+      }
+    }
+
+    li.nav-button {
+      a {
+        &:before {
+          display: block;
+          content: "";
+          position: absolute;
+          top: 5.5rem;
+          left: 3rem;
+          bottom: 5.5rem;
+          right: 3rem;
+          border: 2px solid $brand-blue;
+          transform: skew(0);
+
+          @media (max-width: 1650px) {
+            top: 6rem;
+            bottom: 6rem;
+            left: 2.1rem;
+            right: 2.1rem;
+          }
+
+          @media (max-width: 1400px) {
+            top: 3rem;
+            bottom: 3rem;
+            left: 1.5rem;
+            right: 1.5rem;
+          }
+
+          @media (max-width: 1200px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .fl-menu-mobile-toggle.text {
+      width: auto;
+      padding: 2.4rem 3.4rem;
+      background: white;
+
+      &:hover,
+      &.fl-active {
+        color: $brand-blue;
+      }
+    }
+
+    .fl-menu-mobile-close {
+      position: absolute;
+      right: 2rem;
+      top: 1.4rem;
+      padding: 1rem;
+
+      &:hover {
+        font-size: 16px !important;
+        padding: 1rem;
+      }
+
+      i {
+        font-size: 1.4rem;
+        color: black;
+      }
+    }
+  }
+}
+
+header.fl-builder-content {
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+#logo {
+  margin: 40px 0 0 30px;
+  @media (max-width: 1400px) {
+    margin-top: 25px;
+  }
+  @media (max-width: 800px) {
+    margin-top: 10px;
+  }
+
+  img {
+    max-width: 260px;
+    transition: all 0.2s ease-in-out;
+
+    @media (max-width: 1650px) {
+      max-width: 240px;
+    }
+
+    @media (max-width: 1400px) {
+      max-width: 200px;
+    }
+  }
+}

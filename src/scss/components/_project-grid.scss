@@ -1,0 +1,119 @@
+.custom-dropdown {
+  .esg-nav-by-shortcode {
+    width: 100%;
+
+    @media (min-width: 769px) {
+      padding: 1rem 0;
+      background: $brand-orange;
+    }
+  }
+
+  .esg-filter-wrapper.dropdownstyle {
+    min-width: 100%;
+
+    .esg-selected-filterbutton.esg-mobile-filter-button {
+      font-size: 18px;
+      color: $brand-dark-grey;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      letter-spacing: 4px;
+      padding: 20px;
+      position: relative;
+      border-radius: 0;
+      text-align: left;
+      border-color: $brand-dark-grey;
+      margin-bottom: 0;
+      box-shadow: none !important;
+
+      @media (max-width: 1200px) {
+        font-size: 14px;
+        letter-spacing: 3px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 3rem;
+        top: 3.6rem;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 6px 0 6px;
+        border-color: $brand-dark-grey transparent transparent transparent;
+
+        @media (max-width: 1200px) {
+          right: 1.5rem;
+        }
+      }
+
+      i {
+        display: none;
+      }
+
+      &:hover {
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .esg-dropdown-wrapper {
+    width: 100%;
+
+    .esg-filterbutton {
+      width: 100%;
+      box-shadow: none;
+      font-size: 18px;
+      color: $brand-dark-grey;
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      letter-spacing: 4px;
+      padding: 20px;
+      position: relative;
+      margin: 0;
+      border-radius: 0;
+      text-align: left;
+      border-color: $brand-dark-grey;
+
+      @media (max-width: 1200px) {
+        font-size: 13px;
+        letter-spacing: 2px;
+      }
+      &:hover {
+        background: $brand-blue;
+        color: white;
+      }
+
+      .eg-icon-ok-1 {
+        display: none;
+      }
+    }
+  }
+
+  &.project-type {
+    position: relative;
+    z-index: 100;
+
+    .esg-nav-by-shortcode {
+      z-index: 10;
+      @media (min-width: 769px) {
+        padding-left: 1rem;
+      }
+    }
+  }
+
+  &.project-status {
+    .esg-nav-by-shortcode {
+      @media (min-width: 769px) {
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  &.project-location {
+    position: relative;
+    z-index: 99;
+  }
+}

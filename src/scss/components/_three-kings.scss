@@ -1,0 +1,31 @@
+.heading-underline {
+  h3 span {
+    padding-bottom: 4rem;
+    border-bottom: 2px solid $brand-blue;
+  }
+}
+
+body:not(.fl-builder-edit) {
+  .interactive-callout-column {
+    cursor: pointer;
+    > div {
+      transition: all 0.15s ease-in-out;
+    }
+
+    .interactive-callout-reveal-text {
+      opacity: 0;
+      max-height: 0px;
+      transition: all 0.5s cubic-bezier(0, 0.04, 0.82, 1.02);
+    }
+
+    &.open > div {
+      background: $brand-orange;
+
+      .interactive-callout-reveal-text {
+        opacity: 1;
+        max-height: 300px;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+}

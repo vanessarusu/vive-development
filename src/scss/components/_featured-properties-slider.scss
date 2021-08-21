@@ -1,0 +1,12 @@
+#featuredPropertiesSlider {
+    .content-container {
+        transition: all 0.5s ease;
+        opacity: 1;
+    }
+
+    .n2-ss-slide:not(.n2-ss-slide-active) {
+        .content-container {
+            opacity: 0;
+        }
+    }
+}

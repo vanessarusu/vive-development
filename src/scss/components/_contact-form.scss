@@ -1,0 +1,56 @@
+#wpforms-223 {
+  label {
+    margin: 0;
+
+    &.wpforms-error {
+      color: $error;
+      margin-top: 1rem;
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+  input,
+  textarea {
+    max-width: 100%;
+    padding: 3rem 1.5rem;
+    display: block;
+    border-color: #666766;
+    color: $brand-blue;
+
+    &.wpforms-error {
+      color: $error;
+      border-color: $error;
+    }
+
+    &::placeholder {
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      color: #666766;
+    }
+
+    &:focus {
+      box-shadow: inset 0 0 1px 2px $brand-blue;
+    }
+  }
+
+  textarea {
+    padding-top: 2rem;
+  }
+
+  .contact-form-submit {
+    width: 100%;
+    background: $brand-blue;
+    color: #fff;
+    padding: 2rem;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-top: 145px;
+    transition: all 0.2s ease-in-out;
+
+    &:focus,
+    &:hover {
+      background: $blue-hover;
+    }
+  }
+}

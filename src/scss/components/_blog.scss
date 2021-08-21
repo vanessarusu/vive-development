@@ -1,0 +1,128 @@
+@mixin post-title() {
+  color: $brand-dark-grey;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+@mixin post-date() {
+  color: $brand-orange;
+  font-family: $poppins;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin: 30px 0 30px;
+}
+
+#customFeaturedPost {
+  img {
+    max-width: calc(100% + 40px);
+    width: 100%;
+  }
+
+  .featured-story-title {
+    color: $brand-orange;
+    font-family: $poppins;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin: 80px 0 10px;
+  }
+  .featured-post-header-container {
+    display: flex;
+  }
+
+  .featured-post-heading-copy {
+    width: 60%;
+  }
+
+  .featured-post-heading-cta {
+    text-align: right;
+    width: 40%;
+    margin-top: 80px;
+
+    a {
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      background: $brand-blue;
+      padding: 16px 48px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-right: 0;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        text-decoration: none;
+        background: $blue-hover;
+      }
+    }
+  }
+
+  .fl-post-title,
+  .fl-post-title a {
+    @include post-title();
+  }
+
+  .featured-post-date {
+    @include post-date();
+  }
+
+  .fl-post-excerpt {
+    margin-top: 10px;
+    padding-top: 30px;
+    border-top: 2px solid $brand-light-grey;
+  }
+}
+
+#sidebarNewsPosts {
+  max-height: 90vh;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+    background-color: #e6e7e8; /* or add it to the track */
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #fff;
+    border: 1px solid #e6e7e8;
+  }
+
+  .blog-sidebar-post-copy {
+    margin-top: 60px;
+    text-align: center;
+
+    .fl-post-title,
+    .fl-post-title a {
+      @include post-title();
+    }
+
+    .featured-post-date {
+      @include post-date();
+    }
+  }
+
+  .featured-post-heading-cta {
+    border-bottom: 2px solid $brand-light-grey;
+    padding-bottom: 40px;
+    a {
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      background: $brand-blue;
+      padding: 16px 48px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        text-decoration: none;
+        background: $blue-hover;
+      }
+    }
+  }
+}
