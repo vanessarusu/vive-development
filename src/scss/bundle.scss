@@ -11,6 +11,7 @@
 // homepage imports
 @import './components/three-kings';
 @import './components/featured-properties-slider';
+@import './components/splash-page';
 
 // about imports
 @import './components/staff-bios';
@@ -23,3 +24,13 @@
 
 // contact form imports
 @import './components/contact-form';
+
+
+.modal-open {
+    position: fixed;
+    overflow: hidden;
+}
+
+.transparent {
+    opacity: 0 !important;
+}

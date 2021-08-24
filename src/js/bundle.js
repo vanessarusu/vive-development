@@ -1,14 +1,17 @@
 import interactiveColumns from "./interactiveColumns";
 import staffBios from "./staffBios";
+import splashPage from './splash-page';
 
-(function(){
-    const ic = interactiveColumns();
-    const sb = staffBios();
+(function () {
+  const ic = interactiveColumns();
+  const sb = staffBios();
+  const sp = splashPage();
 
-    ic.init();
-    sb.init();
+  ic.init();
+  sb.init();
+  sp.init();
+
 })();
-
 
 
 // (function(){

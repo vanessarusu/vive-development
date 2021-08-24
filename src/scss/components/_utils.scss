@@ -10,3 +10,13 @@ body {
 .position-relative {
   position: relative;
 }
+
+.modal-open {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+}
+
+.transparent {
+  opacity: 0 !important;
+}
