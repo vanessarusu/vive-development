@@ -1,28 +1,37 @@
-.staff-bio {
-    .staff-bio-expand {
-        img {
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        & ~ .fl-module-rich-text,
-        & ~ .fl-module-photo {
-            opacity: 0;
-            max-height: 0px;
-            overflow: hidden;
-            transition: all 0.4s cubic-bezier(0,.04,.82,1.02);
-        }
-    }
-
-    &.open {
+body:not(.fl-builder-edit) {
+    .staff-bio {
         .staff-bio-expand {
             img {
-                transform: rotate(45deg);
+                cursor: pointer;
+                transition: all 0.3s ease;
             }
             & ~ .fl-module-rich-text,
             & ~ .fl-module-photo {
-                transition: all 0.5s ease-in-out;
-                opacity: 1;
-                max-height: 800px;
+                opacity: 0;
+                max-height: 0px;
+                overflow: hidden;
+                transition: all 0.4s cubic-bezier(0,.04,.82,1.02);
+            }
+        }
+    
+        &.open {
+            .staff-bio-expand {
+                img {
+                    transform: rotate(45deg);
+                }
+                & ~ .fl-module-rich-text,
+                & ~ .fl-module-photo {
+                    transition: all 0.5s ease-in-out;
+                    opacity: 1;
+                    max-height: 800px;
+                }
+            }
+        }
+
+        .bio-position {
+            min-height: 100px;
+            @media (max-width: $tablet) {
+                min-height: unset;
             }
         }
     }

@@ -26,11 +26,14 @@
 @import './components/contact-form';
 
 
-.modal-open {
-    position: fixed;
-    overflow: hidden;
+.esg-content.eg-washington-element-14 {
+    min-height: 78px !important;
 }
 
-.transparent {
-    opacity: 0 !important;
+.no-filter-message {
+    display: none;
+}
+
+.esg-navigationbutton.esg-loadmore.esg-display-inline-block {
+    display: none;
 }
