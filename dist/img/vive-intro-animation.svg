@@ -11,45 +11,45 @@
 	<g id="Top-blue" fill-opacity="1">
 		<polygon class="st0" points="2275.3,0 1316.5,0 1779.5,721.3 		"/>
 		<rect x="835.9" class="st1" width="1920" height="1493.3"/>
-		<!-- <animate 
+		<animate 
 				xlink:href="#Top-blue"
 				id="top-blue" 
 				attributeType="xml"
 				attributeName="fill-opacity" 
 				from="1" 
 				to="0" 
-				dur="2s"
+				dur="1.8s"
 				fill="freeze"
-				begin="2s"
-		/> -->
+				begin="indefinite"
+		/>
 	</g>
 	<g id="Right-blue">
 		<polygon class="st0" points="3584.4,0 2720.8,0 1766.4,1493.3 3584.4,1493.3 		"/>
-		<!-- <animate 
+		<animate 
 				xlink:href="#Right-blue"
 				id="right-blue" 
 				attributeType="xml"
 				attributeName="fill-opacity" 
 				from="1" 
 				to="0" 
-				dur="2s"
+				dur="1.8s"
 				fill="freeze"
-				begin="1.5s"
-		/> -->
+				begin="indefinite"
+		/>
 	</g>
 	<g id="Left-blue">
 		<polygon class="st0" points="0,1493.3 0,0 855.1,0 1792.9,1493.3 		"/>
-		<!-- <animate 
+		<animate 
 				xlink:href="#Left-blue"
 				id="left-blue" 
 				attributeType="xml"
 				attributeName="fill-opacity" 
 				from="1" 
 				to="0" 
-				dur="2.5s"
+				dur="2s"
 				fill="freeze"
-				begin="0.5s"
-		/> -->
+				begin="indefinite"
+		/>
 	</g>
 	<g id="Orange-V">
 		<polygon class="st2" points="2275.3,0 1779.5,721.3 1316.5,0 855.1,0 1779.4,1493.3 2736.7,0 		"/>
@@ -60,7 +60,7 @@
 				attributeName="fill-opacity" 
 				from="1" 
 				to="0" 
-				dur="1.5s"
+				dur="1.8s"
 				fill="freeze"
 				begin="indefinite"
 		/>

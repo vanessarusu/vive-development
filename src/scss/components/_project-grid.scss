@@ -117,3 +117,33 @@
     z-index: 99;
   }
 }
+
+.esg-content.eg-washington-element-14 {
+  min-height: 78px !important;
+  @media(max-width: 1200px) {
+      max-height: 78px;
+  }
+  @media(max-width: 1100px) {
+      max-height: unset;
+  }
+  @media(max-width: 640px) {
+      min-height: unset !important;
+  }
+}
+
+.eg-washington-element-13 {
+  @media (max-width: 1600px) {
+      min-height: 156px;
+  }
+  @media(max-width: 640px) {
+      min-height: unset !important;
+  }
+}
+
+.no-filter-message {
+  display: none;
+}
+
+.esg-navigationbutton.esg-loadmore.esg-display-inline-block {
+  display: none;
+}

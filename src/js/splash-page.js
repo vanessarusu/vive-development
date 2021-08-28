@@ -51,6 +51,7 @@ const splashPage = function () {
       setTimeout(function () {
         splashPage.style.display = "none";
         body.classList.remove("modal-open");
+        // splashPage.remove();
       }, 5200);
     }
 

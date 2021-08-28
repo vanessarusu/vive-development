@@ -67,6 +67,17 @@ const projectGrid = function () {
     });
   }
 
+  function clickLeasing() {
+    let button = document.querySelector('.esg-filterbutton[data-filter="filter-now-leasing"]');
+
+      setTimeout(function() {
+        if (button != undefined) {
+            button.click();
+            button.parentElement.style.display = 'none';
+        }
+      }, 400);  
+  }
+
   function init() {
     setTimeout(function () {
       if (document.querySelector("body").classList.contains("page-id-18")) {
@@ -77,6 +88,7 @@ const projectGrid = function () {
 
   return {
     init: init,
+    loadLeasing: clickLeasing,
   };
 };
 
