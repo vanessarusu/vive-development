@@ -119,7 +119,8 @@
 }
 
 .esg-content.eg-washington-element-14 {
-  min-height: 78px !important;
+  // min-height: 88px !important;
+  min-height: 0;
   @media(max-width: 1200px) {
       max-height: 78px;
   }
@@ -133,10 +134,34 @@
 
 .eg-washington-element-13 {
   @media (max-width: 1600px) {
-      min-height: 156px;
+      min-height: 135px;
+      min-height: 0;
   }
   @media(max-width: 640px) {
       min-height: unset !important;
+  }
+}
+
+.eg-washington-content {
+  min-height: 360px !important;
+  position: relative;
+}
+
+.eg-washington-element-15-a {
+  position: absolute !important;
+  bottom: 110px;
+  margin: 0 auto !important;
+  width: 80%;
+  left: 0;
+  right: 0;
+  padding: 0;
+
+  @media (min-width: 640px) and (max-width: 800px) {
+    bottom: 60px;
+  }
+
+  @media (max-width: 600px) {
+    bottom: 100px;
   }
 }
 

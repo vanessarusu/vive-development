@@ -1,6 +1,7 @@
 const splashPage = function () {
   function playSplashPage(splashPage, body) {
     var svgElement = document.querySelector("#introAnimation");
+    svgElement.style.display ='block';
     localStorage.setItem("hasViewedSplashPage", true);
     // animation
     var orange = svgElement.querySelector("#orangev");
