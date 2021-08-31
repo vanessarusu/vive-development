@@ -147,7 +147,7 @@ body:not(.fl-builder-edit) {
         a {
           padding: 40px 18px;
           display: block;
-          text-align: center;
+          text-align: left;
 
           &:before {
             transform: skew(0);
@@ -172,6 +172,7 @@ body:not(.fl-builder-edit) {
             a {
                 color: $brand-blue;
             }
+            
         }
       }
     }
@@ -274,3 +275,8 @@ header.fl-builder-content {
 .fl-menu-mobile-flyout {
     padding: 0 !important;
 }
+ @media (max-width: 1200px) {
+  li.menu-item:not(.current-menu-parent) .fl-has-submenu-container.focus a {
+    color: $brand-blue !important; 
+  }
+ }
