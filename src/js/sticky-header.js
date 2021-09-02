@@ -5,13 +5,14 @@ const stickyHeader = function () {
     var breakpoint = 1200;
     var prevScrollpos = window.pageYOffset;
     var browserHeight = window.innerHeight;
-    
+
     if(headerScrollHook == undefined) {
         return;
     }
 
     window.onscroll = function () {
          /* When the user scrolls down, hide the header. When the user scrolls up, show the header*/
+         headerScrollHook.classListremove('fl-overlap-top');
 
       if (window.innerWidth > breakpoint) {
         var currentScrollPos = pageYOffset;
