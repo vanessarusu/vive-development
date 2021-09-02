@@ -11,10 +11,7 @@ const stickyHeader = function () {
     }
 
     window.onscroll = function () {
-         /* When the user scrolls down, hide the header. When the user scrolls up, show the header*/
-         headerScrollHook.classListremove('fl-overlap-top');
-
-      if (window.innerWidth > breakpoint) {
+      if (window.innerWidth > breakpoint) { 
         var currentScrollPos = pageYOffset;
         
         if (currentScrollPos > browserHeight / 4) {
