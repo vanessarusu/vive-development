@@ -19,6 +19,8 @@ import stickyHeader from "./sticky-header";
 
   if (window.location.href.indexOf("#available-now") >= 1) {
     pg.loadLeasing();
+  } else {
+    document.querySelector('#menu-item-28').classList.remove('current-menu-item');
   }
 
   console.log('web design by lwdg.ca. development by vanessarusu.com');
