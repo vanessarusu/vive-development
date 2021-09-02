@@ -26,7 +26,7 @@ body:not(.fl-builder-edit) {
             right: 0;
             bottom: 0;
             z-index: 0;
-            transform: skew(-35deg);
+            transform: skew(-25deg);
           }
           // create additional white block to cover the right side of the first link
           &:after {
@@ -105,7 +105,7 @@ body:not(.fl-builder-edit) {
           right: 0;
           bottom: 0;
           z-index: -10;
-          transform: skew(-35deg);
+          transform: skew(-25deg);
         }
 
         &:hover {
@@ -129,10 +129,10 @@ body:not(.fl-builder-edit) {
 
     .sub-menu {
       min-width: 206px;
-      transform: translateX(-61px);
+      transform: translateX(-41px);
 
       @media (max-width: 1400px) {
-        transform: translateX(-40px);
+        transform: translateX(-25px);
       }
 
       @media (max-width: 1200px) {

@@ -21,4 +21,6 @@ import stickyHeader from "./sticky-header";
     pg.loadLeasing();
   }
 
+  console.log('web design by lwdg.ca. development by vanessarusu.com');
+
 })();
