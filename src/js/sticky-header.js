@@ -8,9 +8,8 @@ const stickyHeader = function () {
 
     window.onscroll = function () {
          /* When the user scrolls down, hide the header. When the user scrolls up, show the header*/
-    
 
-      if (window.innerWidth > breakpoint) {
+      if (window.innerWidth > breakpoint && headerScrollHook != undefined) {
         var currentScrollPos = pageYOffset;
         
         if (currentScrollPos > browserHeight / 4) {
