@@ -302,3 +302,44 @@ header.fl-builder-content {
     color: $brand-blue !important; 
   }
  }
+
+
+
+ // sticky header
+
+ #header-scroll-up {
+  position: fixed; /* Makes it stick */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: all 0.5s; /* Transition effect when sliding down (and up) */
+  z-index: 20; /* added because the BB number counter module appeared over the header  */
+
+  &.sticky-hide {
+    top: -280px;
+    background-color: transparent;
+    position: fixed;
+  }
+
+  &.sticky-visible {
+    top: 0;
+    background-color: white;
+    position: fixed;
+    max-height: 180px;
+
+    #logo {
+      transform: scale(0.8);
+      margin-top: 10px;
+      &:before {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.admin-bar #header-scroll-up {
+  margin-top: 32px; /* added so the WP bar did not obscure the header when logged in */
+}
+
+.fl-theme-builder-header {
+  background: transparent;
+}

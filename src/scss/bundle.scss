@@ -1,78 +1,63 @@
 // theme imports
-@import './components/colorswatch';
-@import './components/typography';
-@import './components/breakpoints';
-@import './components/utils';
+@import "./components/colorswatch";
+@import "./components/typography";
+@import "./components/breakpoints";
+@import "./components/utils";
 
 // global imports
-@import './components/main-navigation';
-@import './components/angled-orange-geometric-bg';
+@import "./components/main-navigation";
+@import "./components/angled-orange-geometric-bg";
 
 // homepage imports
-@import './components/three-kings';
-@import './components/featured-properties-slider';
-@import './components/splash-page';
+@import "./components/three-kings";
+@import "./components/featured-properties-slider";
+@import "./components/splash-page";
 
 // about imports
-@import './components/staff-bios';
+@import "./components/staff-bios";
 
 // project grid imports
-@import './components/project-grid';
+@import "./components/project-grid";
 
 // blog functionaliity imports
-@import './components/blog';
+@import "./components/blog";
 
 // contact form imports
-@import './components/contact-form';
-
-
+@import "./components/contact-form";
 
 #header-scroll-up {
-    position: fixed; /* Makes it stick */
-    top: 0; /* Stay on top */
-    width: 100%; /* Full width */
-    transition: all 0.5s; /* Transition effect when sliding down (and up) */
-    z-index:20; /* added because the BB number counter module appeared over the header  */
+  position: fixed; /* Makes it stick */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: all 0.5s; /* Transition effect when sliding down (and up) */
+  z-index: 20; /* added because the BB number counter module appeared over the header  */
 
-    &.sticky-hide {
-        top: -280px;
-        background-color: transparent;
-        position: fixed;
-    }
+  &.sticky-hide {
+    top: -280px;
+    background-color: transparent;
+    position: fixed;
+  }
 
-    &.sticky-visible {
-        top: 0;
-        background-color: white;
-        position: fixed;
-        max-height: 180px;
+  &.sticky-visible {
+    top: 0;
+    background-color: white;
+    position: fixed;
+    max-height: 180px;
 
-        #logo {
-            transform: scale(0.8);
-            margin-top: 10px;
-        }
+    #logo {
+      transform: scale(0.8);
+      margin-top: 10px;
+      &:before {
+        opacity: 0;
+      }
     }
-    }
-    
-    .admin-bar #header-scroll-up
-    {
-    margin-top: 32px;  /* added so the WP bar did not obscure the header when logged in */
-    }
-    
-    #fl-main-content
-    {
-    //margin-top: 100px; /* The space need after the header and the main content */
-    }
-    
-    .fl-builder-content[data-type="header"].fl-theme-builder-header-shrink IMG
-    {
-    //max-height: 30px !important;  /* shinks the logo image if using Beaver Themer's 
-    //shrink option. You could swap the IMG select for something else you want to make smaller */
-    
-    }
-    .fl-theme-builder-header
-    {
-        background: transparent;
-    //background-color: #f0f0f0; /* Because the transition effect on the header you can see a flash 
-  //  of the site's background color. This mask this by adding a matching header area background.*/
-    }
-    
+  }
+}
+
+.admin-bar #header-scroll-up {
+  margin-top: 32px; /* added so the WP bar did not obscure the header when logged in */
+}
+
+.fl-theme-builder-header {
+  background: transparent;
+}
