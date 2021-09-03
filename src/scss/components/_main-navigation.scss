@@ -93,6 +93,11 @@ body:not(.fl-builder-edit) {
         @media (max-width: 1400px) {
           padding: 50px 30px 50px;
           font-size: 14px;
+          letter-spacing: 2px;
+        }
+
+        @media (max-width: 800px) {
+          font-size: 13px;
         }
 
         // create the skewed blue hover block
@@ -264,21 +269,21 @@ header.fl-builder-content {
     position: relative;
   }
 
-  &:before {
-    @supports(filter: blur(50px)) {
-      filter: blur(100px);
-      background: white;
-      content: '';
-      position: absolute;
-      width: 140%;
-      height: 150%;
-      left: -20%;
-      top: -20%;
-      display: block;
-      z-index: -1;
-    }
+  // &:before {
+  //   @supports(filter: blur(50px)) {
+  //     filter: blur(100px);
+  //     background: white;
+  //     content: '';
+  //     position: absolute;
+  //     width: 140%;
+  //     height: 150%;
+  //     left: -20%;
+  //     top: -20%;
+  //     display: block;
+  //     z-index: -1;
+  //   }
     
-  }
+  // }
 
   img {
     max-width: 260px;
@@ -319,11 +324,11 @@ header.fl-builder-content {
     background-color: transparent;
     position: fixed;
 
-    #logo {
-      &:before {
-        opacity: 0;
-      }
-    }
+    // #logo {
+    //   &:before {
+    //     opacity: 0;
+    //   }
+    // }
   }
 
   &.sticky-visible {
@@ -336,9 +341,9 @@ header.fl-builder-content {
       transform: scale(0.8);
       margin-top: 10px;
 
-      &:before {
-        opacity: 0;
-      }
+      // &:before {
+      //   opacity: 0;
+      // }
     }
   }
 }
