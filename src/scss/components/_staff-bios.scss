@@ -29,7 +29,7 @@ body:not(.fl-builder-edit) {
         }
 
         .bio-position {
-            min-height: 100px;
+            min-height: 70px;
             @media (max-width: $tablet) {
                 min-height: unset;
             }

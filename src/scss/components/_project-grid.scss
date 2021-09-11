@@ -3,7 +3,7 @@
     width: 100%;
 
     @media (min-width: 769px) {
-      padding: 1rem 0;
+      padding: 0.8rem 0;
       background: $brand-orange;
     }
   }
@@ -12,13 +12,13 @@
     min-width: 100%;
 
     .esg-selected-filterbutton.esg-mobile-filter-button {
-      font-size: 18px;
+      font-size: 14px;
       color: $brand-dark-grey;
       text-transform: uppercase;
       font-family: "Poppins", sans-serif;
       font-weight: 400;
       letter-spacing: 4px;
-      padding: 20px;
+      padding: 12px;
       position: relative;
       border-radius: 0;
       text-align: left;
@@ -35,7 +35,7 @@
         content: "";
         position: absolute;
         right: 3rem;
-        top: 3.6rem;
+        top: 3rem;
         display: inline-block;
         width: 0;
         height: 0;
@@ -64,13 +64,13 @@
     .esg-filterbutton {
       width: 100%;
       box-shadow: none;
-      font-size: 18px;
+      font-size: 14px;
       color: $brand-dark-grey;
       text-transform: uppercase;
       font-family: "Poppins", sans-serif;
       font-weight: 400;
       letter-spacing: 4px;
-      padding: 20px;
+      padding: 12px;
       position: relative;
       margin: 0;
       border-radius: 0;
@@ -132,15 +132,15 @@
   }
 }
 
-.eg-washington-element-13 {
-  @media (max-width: 1600px) {
-      min-height: 135px;
-      min-height: 0;
-  }
-  @media(max-width: 640px) {
-      min-height: unset !important;
-  }
-}
+// .eg-washington-element-13 {
+//   @media (max-width: 1600px) {
+//       min-height: 135px;
+//       min-height: 0;
+//   }
+//   @media(max-width: 640px) {
+//       min-height: unset !important;
+//   }
+// }
 
 .eg-washington-content {
   min-height: 360px !important;
@@ -149,7 +149,7 @@
 
 .eg-washington-element-15-a {
   position: absolute !important;
-  bottom: 110px;
+  bottom: 140px;
   margin: 0 auto !important;
   width: 80%;
   left: 0;

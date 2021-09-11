@@ -1,16 +1,11 @@
 @mixin post-title() {
   color: $brand-dark-grey;
-  font-size: 30px;
-  line-height: 42px;
-
-  @media (max-width: $desktop) {
-    font-size: 26px;
-    line-height: 34px;
-  }
+  font-size: 26px;
+  line-height: 32px;
 
   @media (max-width: $tablet) {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
@@ -18,8 +13,8 @@
   color: $brand-orange;
   font-family: $poppins;
   font-weight: bold;
-  font-size: 16px;
-  letter-spacing: 6px;
+  font-size: 14px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   margin: 30px 0 30px;
 
@@ -40,19 +35,14 @@
     color: $brand-orange;
     font-family: $poppins;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.5;
-    letter-spacing: 10px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     margin: 80px 0 10px;
 
-    @media (max-width: $desktop) {
-      font-size: 20px;
-      line-height: 30px;
-    }
-
     @media (max-width: $tablet) {
-      font-size: 18px;
+      font-size: 16px;
       line-height: 20px;
       letter-spacing: 6px;
     }
@@ -60,13 +50,14 @@
 
   .featured-post-header-container {
     display: flex;
+
     @media (max-width: 700px) {
       flex-wrap: wrap;
     }
   }
 
   .featured-post-heading-copy {
-    width: 60%;
+    width: 55%;
 
     @media (max-width: 700px) {
       width: 100%;
@@ -75,7 +66,7 @@
 
   .featured-post-heading-cta {
     text-align: right;
-    width: 40%;
+    width: 45%;
     margin-top: 80px;
 
     @media (max-width: 700px) {
@@ -86,7 +77,7 @@
 
     a {
       color: #fff;
-      font-size: 16px;
+      font-size: 14px;
       text-align: center;
       background: $brand-blue;
       padding: 16px 48px;
@@ -163,29 +154,32 @@
   }
 
   .blog-sidebar-post-copy {
-    margin-top: 60px;
+    margin-top: 30px;
     text-align: center;
 
     .fl-post-title,
     .fl-post-title a {
       @include post-title();
+      font-size: 22px;
+      line-height: 28px;
     }
 
     .featured-post-date {
       @include post-date();
+      margin: 10px 0 20px;
     }
   }
 
   .featured-post-heading-cta {
-    border-bottom: 2px solid $brand-light-grey;
+    border-bottom: 1px solid $brand-light-grey;
     padding-bottom: 40px;
 
     a {
       color: #fff;
-      font-size: 16px;
+      font-size: 12px;
       text-align: center;
       background: $brand-blue;
-      padding: 16px 48px;
+      padding: 12px 40px;
       display: inline-block;
       text-transform: uppercase;
       letter-spacing: 4px;
@@ -206,6 +200,22 @@
         text-decoration: none;
         background: $blue-hover;
       }
+    }
+  }
+
+  .fl-builder-pagination-load-more {
+    
+    .fl-button {
+      background: transparent;
+      border-bottom: 2px solid $brand-blue;
+      padding: 0 10px 10px;
+    }
+
+    span {
+      background: transparent;
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: $brand-blue;
     }
   }
 }
