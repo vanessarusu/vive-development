@@ -1,6 +1,5 @@
 const stickyHeader = function () {
   function init() {
-
     var headerScrollHook = document.getElementById("header-scroll-up");
     var breakpoint = 1200;
     var prevScrollpos = window.pageYOffset;
@@ -9,8 +8,9 @@ const stickyHeader = function () {
     if(headerScrollHook == undefined) {
         return;
     }
-
+    
     window.onscroll = function () {
+
       if (window.innerWidth > breakpoint) { 
         var currentScrollPos = pageYOffset;
         
