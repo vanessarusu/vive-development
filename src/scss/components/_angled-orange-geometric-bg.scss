@@ -1,8 +1,8 @@
 body:not(.fl-builder-edit) {
   .geometric-background {
-    background: url("https://lwdgdev.ca/vive/wp-content/uploads/2021/08/geometric-background.svg")
-      center center no-repeat;
-    background-size: cover;
+    background: url("https://lwdgdev.ca/vive/wp-content/uploads/2021/09/repeat-pattern-opacity.svg")
+      top right repeat;
+    background-size: 280px;
     background-color: $brand-blue;
 
     .fl-row-content-wrap > div {
