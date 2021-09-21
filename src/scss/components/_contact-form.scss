@@ -54,7 +54,8 @@
 
     &:focus,
     &:hover {
-      background: $blue-hover;
+      background: $light-grey-hover-bg;
+      color: $grey-hover-text;
     }
   }
 }

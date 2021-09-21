@@ -20,6 +20,7 @@ body:not(.fl-builder-edit) {
 
     &.open > div {
       background: $brand-orange;
+      min-height: 485px;
 
       .interactive-callout-reveal-text {
         opacity: 1;

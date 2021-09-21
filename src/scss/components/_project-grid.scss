@@ -119,7 +119,6 @@
 }
 
 .esg-content.eg-washington-element-14 {
-  // min-height: 88px !important;
   min-height: 0;
   @media(max-width: 1200px) {
       max-height: 78px;
@@ -132,19 +131,12 @@
   }
 }
 
-// .eg-washington-element-13 {
-//   @media (max-width: 1600px) {
-//       min-height: 135px;
-//       min-height: 0;
-//   }
-//   @media(max-width: 640px) {
-//       min-height: unset !important;
-//   }
-// }
-
 .eg-washington-content {
   min-height: 360px !important;
   position: relative;
+}
+.eg-washington-element-15 {
+  transition: all 0.2s ease-in-out;
 }
 
 .eg-washington-element-15-a {

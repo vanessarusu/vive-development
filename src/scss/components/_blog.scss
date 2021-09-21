@@ -94,7 +94,9 @@
 
       &:hover {
         text-decoration: none;
-        background: $blue-hover;
+        // background: $blue-hover;
+        background: $light-grey-hover-bg;
+        color: $grey-hover-text;
       }
     }
   }
@@ -198,7 +200,8 @@
 
       &:hover {
         text-decoration: none;
-        background: $blue-hover;
+        background: $light-grey-hover-bg;
+        color: $grey-hover-text;
       }
     }
   }
@@ -219,8 +222,3 @@
     }
   }
 }
-
-// ::-webkit-scrollbar-button:vertical:decrement {
-//   background-color: purple;
-//   border: 1px dashed blue;
-// }
