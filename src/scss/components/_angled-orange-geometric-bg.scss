@@ -28,6 +28,14 @@ body:not(.fl-builder-edit) {
       pointer-events: none;
     }
   }
+
+  &.white-small {
+    &:before {
+      @media (max-width: $tablet) {
+        background: #fff;
+      }
+    }
+  }
 }
 
 .angle-right {
