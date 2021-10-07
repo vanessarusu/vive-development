@@ -27,12 +27,12 @@ body:not(.fl-builder-edit) {
       z-index: 1;
       pointer-events: none;
     }
-  }
 
-  &.white-small {
-    &:before {
-      @media (max-width: $tablet) {
-        background: #fff;
+    &.white-small {
+      &:before {
+        @media (max-width: $tablet) {
+          background: #fff;
+        }
       }
     }
   }
