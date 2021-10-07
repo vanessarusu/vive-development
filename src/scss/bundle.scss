@@ -28,3 +28,9 @@
 footer a {
     text-decoration: underline;
 }
+
+div#n2-ss-5-arrow-next:focus,
+div#n2-ss-5-arrow-previous {
+	border: 1px solid #323e48;
+	border-radius: 5%;
+}
