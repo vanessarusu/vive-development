@@ -9,7 +9,7 @@ const staffBios = function () {
       if (Boolean(el.querySelector(".staff-bio-expand img"))) {
         el.querySelector(".staff-bio-expand img").tabIndex = 0;
         el.querySelector(".staff-bio-expand img"). addEventListener('keyup', function(e) {
-          if(e.keycode == 13) {
+          if(e.keyCode == 13) {
             tc.toggle(el);
           }
         })
