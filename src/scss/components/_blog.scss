@@ -10,7 +10,7 @@
 }
 
 @mixin post-date() {
-  color: $brand-orange;
+  color: $brand-dark-grey;
   font-family: $poppins;
   font-weight: bold;
   font-size: 14px;
@@ -32,7 +32,7 @@
   }
 
   .featured-story-title {
-    color: $brand-orange;
+    color: $brand-dark-grey;
     font-family: $poppins;
     font-weight: bold;
     font-size: 18px;
@@ -133,7 +133,7 @@
 
   &::-webkit-scrollbar-button:vertical:decrement,
   &::-webkit-scrollbar-button:vertical:increment {
-    background-color: $brand-orange;
+    background-color: $brand-dark-grey;
     height: 30px;
     background-image: url(https://lwdgdev.ca/vive/wp-content/uploads/2021/09/scrollbar-arrow-up.svg);
     background-repeat: no-repeat;
