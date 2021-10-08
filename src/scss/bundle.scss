@@ -32,7 +32,7 @@ footer a {
 }
 
 div#n2-ss-5-arrow-next:focus,
-div#n2-ss-5-arrow-previous {
+div#n2-ss-5-arrow-previous:focus {
 	border: 1px solid #323e48;
 	border-radius: 5%;
 }
@@ -52,5 +52,5 @@ body.project-template-default #header-scroll-up:before {
 	width: 400px;
     bottom: -20px;
 	background: rgba(255,255,255,0.9);
-	filter: blur(60px)
+	filter: blur(60px);
 }
