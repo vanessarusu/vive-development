@@ -10,9 +10,16 @@ const interactiveColumns = (function () {
             var interactiveColumns = document.querySelectorAll('.interactive-callout-column');
     
             interactiveColumns.forEach(el => {
-                el.addEventListener('click', function(e){
+                el.tabIndex = 0;
+                el.addEventListener('click', function(e) {
                     e.preventDefault();
                     tc.toggle(this);
+                })
+                el.addEventListener('keyup', function(e) {
+                    if(e.keyCode == 9) {
+                        e.preventDefault();
+                        tc.toggle(this);
+                    }
                 })
             })
         }

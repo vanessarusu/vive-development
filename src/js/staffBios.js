@@ -7,6 +7,12 @@ const staffBios = function () {
     var bios = document.querySelectorAll(".staff-bio");
     bios.forEach((el) => {
       if (Boolean(el.querySelector(".staff-bio-expand img"))) {
+        el.querySelector(".staff-bio-expand img").tabIndex = 0;
+        el.querySelector(".staff-bio-expand img"). addEventListener('keyup', function(e) {
+          if(e.keyCode == 13) {
+            tc.toggle(el);
+          }
+        })
         el.querySelector(".staff-bio-expand img").addEventListener(
           "click",
           function (e) {
